@@ -1,0 +1,18 @@
+{
+  "name": "csvjson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit --skipLibCheck",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build": "yarn build:types && yarn build:js",
+    "build:types": "tsc --emitDeclarationOnly ",
+    "build:js": "tsc"
+  },
+  "dependencies": {}
+}
